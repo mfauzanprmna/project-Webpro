@@ -1,30 +1,27 @@
 const products = [
     {
         id: 1,
-        name: 'Basic Tee',
-        href: '#',
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+        name: 'Artikel 1',
+        href: 'https://www.freepik.com/free-photos-vectors/wallpaper',
+        imageSrc: 'https://img.freepik.com/free-photo/blossom-floral-bouquet-decoration-colorful-beautiful-flowers-background-garden-flowers-plant-pattern-wallpapers-greeting-cards-postcards-design-wedding-invites_90220-1103.jpg',
         imageAlt: "Front of men's Basic Tee in black.",
-        price: '$35',
-        color: 'Black',
+        desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, maxime!',
     },
     {
         id: 2,
-        name: 'Basic Tee',
-        href: '#',
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+        name: 'Artikel 2',
+        href: 'https://pixabay.com/images/search/wallpaper/',
+        imageSrc: 'https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547_1280.jpg',
         imageAlt: "Front of men's Basic Tee in black.",
-        price: '$35',
-        color: 'Black',
+        desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, maxime!',
     },
     {
         id: 3,
-        name: 'Basic Tee',
-        href: '#',
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+        name: 'Artikel 3',
+        href: 'https://www.freepik.com/free-photos-vectors/background-wallpaper',
+        imageSrc: 'https://img.freepik.com/free-vector/night-ocean-landscape-full-moon-stars-shine_107791-7397.jpg',
         imageAlt: "Front of men's Basic Tee in black.",
-        price: '$35',
-        color: 'Black',
+        desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, maxime!',
     },
     // More products...
 ]
@@ -38,10 +35,8 @@ export default function Example() {
                 <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8 ">
                     {products.map((product) => (
                         <div key={product.id} className="group relative shadow-md p-2 rounded-md">
-                            <h1 className="text-xl font-bold">
-                                <a href={product.href}>
-                                    {product.name}
-                                </a>
+                            <h1 className="text-xl font-bold mb-2">
+                                {product.name}
                             </h1>
                             <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none lg:h-80">
                                 <img
@@ -50,14 +45,13 @@ export default function Example() {
                                     className="h-full w-full object-cover object-center lg:h-full lg:w-full"
                                 />
                             </div>
-                            <div className="mt-4 flex justify-between">
-                                <div>
-                                    <p className="mt-1 text-sm text-gray-500">{product.color}</p>
-                                </div>
-                                <p className="text-sm font-medium text-gray-900">{product.price}</p>
+                            <div className="mt-4">
+                                <p className="text-sm font-medium text-gray-900 mb-5">{product.desc}</p>
                             </div>
                             <div>
-                                <button type="button" class="flex w-full mt-2 justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Open</button>
+                                <button type="button" class="flex w-full mt-2 justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                                    <a href={product.href}>Open</a>
+                                </button>
                             </div>
                         </div>
                     ))}
