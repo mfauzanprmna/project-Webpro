@@ -58,3 +58,12 @@
 .Poppins-light{
   font-family: Poppins-light;
 }
+
+@font-face {
+  font-family: Poppins-medium;
+  src: url(./component/font/POPPINS-MEDIUM.TTF);
+}
+
+.Poppins-medium{
+  font-family: Poppins-medium;
+}
