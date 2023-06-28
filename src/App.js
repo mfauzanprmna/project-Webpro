@@ -11,13 +11,13 @@ function App() {
   return (
     <>
       <Navbar />
-        <div>
+        <div className="container">
           <Routes>
             <Route path="/" element={ <Home />} />
             <Route path="/artikel" element={ <Artikel />} />
             <Route path="/contact" element={ <Contact />} />
             <Route path="/organization" element={ <Organization />} />
-        </Routes>
+          </Routes>
         </div>
       <Footer />
     </>
