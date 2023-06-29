@@ -1,4 +1,5 @@
 
+import React, { useEffect, useState } from "react";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
@@ -14,7 +15,12 @@ function classNames(...classes) {
     return classes.filter(Boolean).join(" ");
 }
 
-export default function navbar() {
+const Navbar = () => {
+    const [currentURL, setCurrentURL] = useState("");
+
+    useEffect(() => {
+        setCurrentURL(window.location.pathname);
+    }, []);
     return (
         <Disclosure as="nav" className="bg-gray-800 shadow-xl">
             {({ open }) => (
@@ -52,12 +58,12 @@ export default function navbar() {
                                                 key={item.name}
                                                 href={item.href}
                                                 className={classNames(
-                                                    item.current
+                                                    item.href === currentURL
                                                         ? "bg-gray-600 text-white"
                                                         : "text-gray-300 hover:bg-gray-700 hover:text-white",
                                                     "rounded-md px-3 py-2 text-sm font-medium"
                                                 )}
-                                                aria-current={item.current ? "page" : undefined}
+                                                aria-current={item.href === currentURL ? "page" : undefined}
                                             >
                                                 {item.name}
                                             </a>
@@ -93,3 +99,5 @@ export default function navbar() {
         </Disclosure>
     );
 }
+
+export default Navbar;
