@@ -6,6 +6,7 @@ import Artikel from './component/artikel';
 import Contact from './component/contact';
 import Home from './component/home';
 import Organization from './component/organization';
+import ViewArtikel from './component/artikel-view';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path="/artikel" element={ <Artikel />} />
             <Route path="/contact" element={ <Contact />} />
             <Route path="/organization" element={ <Organization />} />
+            <Route path="/artikel-view" element={ <ViewArtikel />} />
           </Routes>
         </div>
       <Footer />

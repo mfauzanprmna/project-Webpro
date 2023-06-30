@@ -1,0 +1,9 @@
+export default function ArtikelView() {
+    return (
+        <div className="mx-auto p-10">
+            <h1 className="text-center font-black text-4xl">Judul Artikel</h1>
+            <img className="mt-5 mx-auto w-8/12" src="https://img.freepik.com/free-vector/night-ocean-landscape-full-moon-stars-shine_107791-7397.jpg" alt="" />
+            <p className="mt-8 indent-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laudantium ipsa ab voluptatum rem non nemo velit quo labore similique, deserunt tempora consectetur, repellendus quas vel. Maxime nam aspernatur hic maiores dicta beatae voluptates iste aliquid, totam alias officia harum qui quaerat inventore. Doloremque ab placeat dolorem dolore odio voluptate voluptas praesentium vel eum quaerat quae, minima sapiente explicabo aliquid saepe eius laudantium in distinctio. Atque ea fuga fugit voluptatum quisquam nesciunt quod soluta fugiat, exercitationem voluptate. Quod dolores iusto distinctio quae vero voluptates cupiditate facere dolorem nobis dolorum possimus sequi tempore iure, ut magni, doloribus ipsum eos odit dicta maiores illum totam! Rem qui incidunt explicabo vel deleniti distinctio ipsa vitae harum tempore! Nihil amet pariatur, dolor ab aspernatur tenetur maxime fugit ratione atque accusantium placeat id? Facilis eligendi quia laudantium est unde asperiores laborum dolorem fuga pariatur. Quos exercitationem qui ipsam reprehenderit libero, tenetur amet, beatae sapiente dignissimos nulla vero iusto suscipit, accusantium explicabo hic odio? Accusantium magni dignissimos expedita vitae voluptatibus, nam quos quibusdam! Explicabo ex aperiam placeat harum, aspernatur quasi expedita facere nam quae id adipisci quaerat iusto eum suscipit obcaecati, asperiores illum, eos saepe ab minima. Suscipit corrupti ipsum accusantium explicabo blanditiis! In, eos repellendus!</p>
+        </div>
+    )
+}
