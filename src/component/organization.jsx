@@ -18,6 +18,7 @@ const MahasiswaData = [
     { name: "Akmal Nur Wahid",  role: "Anggota" },
     { name: "Allia Chyanda Putri",  role: "Anggota" },
     { name: "Deva Alvyn Budinugraha",  role: "Anggota" },
+    { name: "Dzaky Naufal Asadel",  role: "Anggota" },
     { name: "Fariz Haidar Zhaffran",  role: "Anggota" },
     { name: "Ghavio Rizky Ananda",  role: "Anggota" },
     { name: "Muhamad Adnan Fadillah",  role: "Anggota" },

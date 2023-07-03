@@ -67,3 +67,37 @@
 .Poppins-medium{
   font-family: Poppins-medium;
 }
+
+.welcome {
+  animation: animate-positive 2s;
+}
+
+.marquee {
+  animation: marquee 1.5s linear;
+}
+
+.marquee1 {
+  animation: marquee1 1.5s linear;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 100%;
+  }
+}
+
+@keyframes marquee1 {
+  0% {
+    transform: translateX(100%);
+    opacity: 0%;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 100%;
+  }
+}
