@@ -101,3 +101,11 @@
     opacity: 100%;
   }
 }
+
+.margin-left{
+  margin-left: 50rem;
+}
+
+.img_size{
+  width: 90rem;
+}
