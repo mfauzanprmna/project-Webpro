@@ -29,20 +29,20 @@ const Jumbotron = () => {
     };
 
     return (
-        <div className="relative bg-gray-800 h-fit   -z-10">
+        <div className="relative bg-gray-800 -z-10">
             <Slider {...settings} className='overflow-hidden'>
             {carousel.map((item) => (
                 <div>
-                    <img className="object-cover w-full h-full opacity-60 -mt-72" src={item.image} alt="Jumbotron 1" />
+                    <img className="object-cover w-full h-[39rem] opacity-60" src={item.image} alt="Jumbotron 1" />
                 </div>
             ))}
             </Slider>
             <div className="absolute inset-0 flex items-center justify-center mb-14">
                 <div className="text-center">
-                    <h1 className="text-4xl font-extrabold text-white sm:text-5xl md:text-6xl">
+                    <h1 className="text-4xl font-extrabold text-white opacity-75 sm:text-5xl md:text-6xl">
                         Tiwaibi Company
                     </h1>
-                    <p className="text-white text-center">COMPANY PROFILE</p>
+                    <p className="text-white text-center opacity-75">COMPANY PROFILE</p>
                     {/* <p className="mt-3 text-lg text-gray-300 sm:mt-5 sm:text-xl sm:max-w-xl sm:mx-auto md:mt-5 md:text-2xl">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis, velit eu
                         vestibulum ultrices, dui dolor molestie justo, et dictum ex tortor eu nisi.

@@ -2,9 +2,9 @@ const currentYear = new Date().getFullYear();
 
 export default function footer() {
     return (
-        <footer className="relative w-full bg-gray-800">
-            <div className="mx-auto w-full max-w-7xl px-8">
-                <div className="mt-12 flex w-full flex-col items-center justify-center border-t border-blue-gray-50 py-4 md:flex-row md:justify-between text-gray-400 focus:ring-white">
+        <footer className="w-full bg-gray-800">
+            <div className="w-full max-w-7xl px-8">
+                <div className="flex w-full flex-col items-center justify-center border-blue-gray-50 py-4 md:flex-row md:justify-between text-gray-400 focus:ring-white">
                     <text
                         variant="small"
                         className="mb-4 text-center font-normal text-blue-gray-900 md:mb-0"

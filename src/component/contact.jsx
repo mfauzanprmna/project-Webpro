@@ -1,68 +1,52 @@
 import React from 'react';
 
 export default function contact() {
-    return (
-        /* <form class="bg-gray-300 rounded-xl w-full max-w-lg relative">
-        <div class="flex flex-wrap -mx-3 mb-6">
-          <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
-              First Name
-            </label>
-            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border
-             border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Jane"></input>
-            <p class="text-red-500 text-xs italic">Please fill out this field.</p>
-          </div>
-          <div class="w-full md:w-1/2 px-3">
-            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
-              Last Name
-            </label>
-            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border
-             border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Doe"></input>
-          </div>
-        </div>
-        <div class="flex flex-wrap -mx-3 mb-6">
-          <div class="w-full px-3">
-            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
-              Password
-            </label>
-            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border
-             border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="password" placeholder="******************"></input>
-            <p class="text-gray-600 text-xs italic">Make it as long and as crazy as you'd like</p>
-          </div>
-        </div>
-        <div class="flex flex-wrap -mx-3 mb-2">
-          <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-city">
-              City
-            </label>
-            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border
-             border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city" type="text" placeholder="Albuquerque"></input>
-          </div>
-          <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
-              State
-            </label>
-            <div class="relative">
-              <select class="block appearance-none w-full bg-gray-200 border
-               border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
-                <option>New Mexico</option>
-                <option>Missouri</option>
-                <option>Texas</option>
-              </select>
-              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+  return (
+    <div className='bg-slate-500 flex justify-center px-5'>
+      <div className='Poppins-medium'>
+        <h1 className='text-white text-6xl mt-10 p-5 text-center'>CONTACT US</h1>
+        <p className='text-white text-center'>We always hear you, left a message for us!</p>
+        <div className='container border-white '>
+          <form action="" className='bg-gray-300 w-full rounded-lg shadow-lg relative content-center'>
+            <div className="mx-3 mb-6">
+              <div className="w-full px-3 mb-6 md:mb-0 p-5 flex sm:flex-row flex-col gap-4">
+                <div className="">
+                  <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="name">
+                    Name
+                  </label>
+                  <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-black rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="name" type="text" placeholder="Name"></input>
+                  <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="Address">
+                    Address
+                  </label>
+                  <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-black rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="Address" type="text" placeholder="Address"></input>
+                </div>
+                <div class="">
+                  <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="email">
+                    E-mail
+                  </label>
+                  <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-black rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="email" type="text" placeholder="E-mail"></input>
+                  <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="Phone">
+                    Phone Number
+                  </label>
+                  <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-black rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="Phone" type="text" placeholder="Phone Number"></input>
+                </div>
+              </div>
+              <div className="w-auto px-3 mb-6 md:mb-0 py-5 m-5">
+                <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="Message">
+                  Message
+                </label>
+                <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-black rounded py-10 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="Message" type="text" placeholder="Enter your message"></input>
               </div>
             </div>
-          </div>
-          <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-zip">
-              Zip
-            </label>
-            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border
-             border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-zip" type="text" placeholder="90210"></input>
-          </div>
+          </form>
+        </div >
+        <div className='py-10'>
+          <hr />
+          <p className='text-white text-center'>Jl. Prof. DR. G.A. Siwabessy, Kota Depok, Jawa Barat 16425</p>
+          <p className='text-white text-center'>tiwaibi@class.com</p>
+          <p className='text-white text-center'>08123456789</p>
         </div>
-      </form> */
-      <></>
-    );
+      </div >
+    </div >
+  );
 }

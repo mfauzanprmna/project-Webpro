@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <Navbar />
-        <div className='-z-10'>
+        {/* <div className='-z-10'> */}
           <Routes>
             <Route path="/" element={ <Home />} />
             <Route path="/artikel" element={ <Artikel />} />
@@ -20,7 +20,7 @@ function App() {
             <Route path="/organization" element={ <Organization />} />
             <Route path="/artikel-view" element={ <ViewArtikel />} />
           </Routes>
-        </div>
+        {/* </div> */}
       <Footer />
     </>
   );
