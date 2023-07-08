@@ -29,7 +29,7 @@ const Jumbotron = () => {
     };
 
     return (
-        <div className="relative bg-gray-800 h-fit -pb-10">
+        <div className="relative bg-gray-800 h-fit   -z-10">
             <Slider {...settings} className='overflow-hidden'>
             {carousel.map((item) => (
                 <div>

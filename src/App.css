@@ -68,16 +68,14 @@
   font-family: Poppins-medium;
 }
 
-.welcome {
-  animation: animate-positive 2s;
-}
-
 .marquee {
   animation: marquee 1.5s linear;
+  z-index: 1;
 }
 
 .marquee1 {
   animation: marquee1 1.5s linear;
+  z-index: 1;
 }
 
 @keyframes marquee {
@@ -100,12 +98,4 @@
     transform: translateX(0%);
     opacity: 100%;
   }
-}
-
-.margin-left{
-  margin-left: 50rem;
-}
-
-.img_size{
-  width: 90rem;
 }

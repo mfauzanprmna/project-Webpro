@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <Navbar />
-        <div>
+        <div className='-z-10'>
           <Routes>
             <Route path="/" element={ <Home />} />
             <Route path="/artikel" element={ <Artikel />} />
