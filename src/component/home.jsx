@@ -7,7 +7,7 @@ export default function home() {
             <Carousel />
             <div className='xl:container xl:mx-auto px-5 flex flex-wrap-reverse marquee items-center w-full h-[45rem]'>
                 <div className='Poppins-medium flex-auto sm:w-[10rem] mr-5'>
-                    <h1 className='text-black text-opacity-75 sm:text-6xl text-start font-bold bg-slate-600 rounded-t-lg p-3 text-xl'>WELCOME MESSAGE</h1>
+                    <h1 className='text-black text-opacity-75 lg:text-6xl text-start font-bold bg-slate-600 rounded-t-lg p-3 text-3xl sm:text-4xl mr-[30%]'>WELCOME MESSAGE</h1>
                     <p className='text-black border-4 border-t-2 p-3 rounded-tr-lg shadow-lg sm:text-lg text-sm'>
                         <b> Welcome to our Company Profile web page!</b> <br />
                         We are a company committed to innovation and providing the best services. With our professional and experienced team, we are ready to help you achieve your business goals.
@@ -26,7 +26,7 @@ export default function home() {
                     <img src="http://localhost:3000/Jakun_20230105_115522.jpg" alt="" className='md:w-[32rem] rounded-lg shadow-lg mx-auto w-[20rem] max-[640px]:w-[32rem]' />
                 </div>
                 <div className='Poppins-medium flex-auto sm:w-[10rem]'>
-                    <h1 className='text-black text-opacity-75 sm:text-6xl text-start font-bold bg-slate-600 rounded-t-lg p-3 text-xl'>ABOUT US</h1>
+                    <h1 className='text-white text-opacity-75 lg:text-6xl font-bold bg-slate-600 rounded-t-lg border-r text-center ml-[30%] p-3 sm:text-4xl text-3xl'>ABOUT US</h1>
                     <p className='text-black border-4 border-t-2 p-3 rounded-tl-lg shadow-lg'>
                         TIWAIBI — another spelling for the TI-B class — is a company that established in 2022 and has 30 experienced and dedicated staff members to make improvement for the company. This company was built in 2022 with the clearest vision and mission.
                         With a great teamwork, we produce a high-quality products and never dissapoin our costumers.</p>

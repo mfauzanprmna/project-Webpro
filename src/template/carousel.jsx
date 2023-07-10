@@ -33,7 +33,7 @@ const Jumbotron = () => {
             <Slider {...settings} className='overflow-hidden'>
             {carousel.map((item) => (
                 <div>
-                    <img className="object-cover w-full h-[39rem] opacity-60" src={item.image} alt="Jumbotron 1" />
+                    <img className="object-cover w-full sm:h-[39rem] opacity-60" src={item.image} alt="Jumbotron 1" />
                 </div>
             ))}
             </Slider>

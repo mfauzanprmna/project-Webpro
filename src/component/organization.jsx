@@ -36,10 +36,10 @@ const MahasiswaData = [
 const MahasiswaList = ({ data }) => (
     <div className="mx-auto px-4">
         <ul className="divide-y divide-gray-100">
-            {data.map((mahasiswa) => (
+            {data.map((mahasiswa, index) => (
                 <li
                     key={mahasiswa.email}
-                    className="flex justify-between gap-x-6 py-5 shadow-lg"
+                    className={`flex justify-between gap-x-6 py-5 shadow-lg animate-[animasi_2.${index}s_ease-in-out]`}
                 >
                     <div className="flex flex-wrap w-full justify-center items-center mx-5">
                         <img
