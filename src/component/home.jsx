@@ -38,15 +38,15 @@ export default function home() {
                         With a great teamwork, we produce a high-quality products and never dissapoin our costumers.</p>
                 </div>
             </div>
-            <div className='xl:container xl:mx-auto px-5 flex flex-wrap marquee items-center w-full'>
-                <div className='Poppins-medium flex-auto sm:w-[10rem] mb-5'>
+            <div className='xl:container xl:mx-auto px-5 flex flex-wrap marquee items-center py-10 gap-4 w-full lg:h-screen mb-10'>
+                <div className='Poppins-medium flex-auto lg:w-[10rem] mr-5'>
                     <h1 className='text-black text-opacity-75 lg:text-6xl text-center font-bold bg-slate-600 rounded-t-lg p-3 text-3xl sm:text-4xl mr-[0%]'>VISI</h1>
                     <p className='text-black border-4 border-t-2 px-5 py-20 h-96 shadow-lg sm:text-lg text-sm'>
                         <b>Our vision</b> <br />
                         To become a leading company in providing innovative and high-quality solutions that empower businesses and global communities. We aim to be internationally recognized as an industry leader, inspiring positive change, and driving sustainable transformation across various sectors.
                     </p>
                 </div>
-                <div className='Poppins-medium flex-auto sm:w-[10rem] mb-5'>
+                <div className='Poppins-medium flex-auto lg:w-[10rem] mr-5'>
                     <h1 className='text-black text-opacity-75 lg:text-6xl text-center font-bold bg-slate-600 rounded-t-lg p-3 text-3xl sm:text-4xl ml-[0%]'>MISI</h1>
                     <p className='text-black border-4 border-t-2 p-5 h-96 shadow-lg sm:text-lg text-sm'>
                         <b> Our mission</b> <br />

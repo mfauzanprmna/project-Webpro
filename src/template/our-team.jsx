@@ -64,6 +64,10 @@ export default class CustomArrows extends Component {
             slidesToScroll: 1,
             nextArrow: <SampleNextArrow />,
             prevArrow: <SamplePrevArrow />,
+            autoplay: true,
+            speed: 3000,
+            autoplaySpeed: 3000,
+            focusOnSelect: true,
             responsive: [
                 {
                     breakpoint: 1024,
@@ -90,20 +94,20 @@ export default class CustomArrows extends Component {
             domain = "localhost:3000";
         }
         return (
-            <div className="w-full h-screen flex justify-center items-center">
+            <div className="w-full h-screen flex justify-center items-center bg-red-400">
                 <div className="w-1/2 relative">
-                    <h2>Custom Arrows</h2>
+                    <h1 className='text-black text-opacity-75 lg:text-6xl text-center font-bold p-3 text-3xl sm:text-4xl ml-[0%]'>Our Team</h1>
                     <Slider {...settings}>
                         {MahasiswaData.map((mahasiswa) => (
-                            <div className="shadow-md p-5 rounded-md mb-5 h-[27rem] max-[600px]:h-52">
-                                <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden bg-gray-200 lg:aspect-none h-52 rounded-xl">
+                            <div className="shadow-md p-5 rounded-md mb-5 h-[27rem] max-[600px]:h-52 bg-gray-300">
+                                <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden bg-gray-300 lg:aspect-none h-52 rounded-xl">
                                     <img
                                         src={`http://${domain}/Foto/${mahasiswa.name}.jpg`}
                                         alt=""
                                         className="h-full w-full object-cover object-center"
                                     />
                                 </div>
-                                <h4 className="text-sm font-bold mt-2">
+                                <h4 className="text-sm font-bold mt-2 text-center">
                                     {mahasiswa.name}
                                 </h4>
                                 <div className="flex items-center">
