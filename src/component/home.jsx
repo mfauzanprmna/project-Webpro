@@ -40,14 +40,14 @@ export default function home() {
             <div className='xl:container xl:mx-auto px-5 flex flex-wrap-reverse marquee items-center w-full h-[45rem]'>
                 <div className='Poppins-medium flex-auto sm:w-[10rem] mr-5'>
                     <h1 className='text-black text-opacity-75 lg:text-6xl text-center font-bold bg-slate-600 rounded-t-lg p-3 text-3xl sm:text-4xl mr-[0%]'>VISI</h1>
-                    <p className='text-black border-4 border-t-2 px-5 py-20 h-96 rounded-tr-lg shadow-lg sm:text-lg text-sm'>
+                    <p className='text-black border-4 border-t-2 px-5 py-20 h-96 shadow-lg sm:text-lg text-sm'>
                         <b>Our vision</b> <br />
                         To become a leading company in providing innovative and high-quality solutions that empower businesses and global communities. We aim to be internationally recognized as an industry leader, inspiring positive change, and driving sustainable transformation across various sectors.
                     </p>
                 </div>
                 <div className='Poppins-medium flex-auto sm:w-[10rem] mr-5'>
                     <h1 className='text-black text-opacity-75 lg:text-6xl text-center font-bold bg-slate-600 rounded-t-lg p-3 text-3xl sm:text-4xl ml-[0%]'>MISI</h1>
-                    <p className='text-black border-4 border-t-2 p-5 h-96 rounded-tr-lg shadow-lg sm:text-lg text-sm'>
+                    <p className='text-black border-4 border-t-2 p-5 h-96 shadow-lg sm:text-lg text-sm'>
                         <b> Our mission</b> <br />
                         <li>Delivering the best solutions: We are committed to providing the best and innovative solutions to our customers</li>
                         <li>Strong collaboration: We believe in mutually beneficial collaboration with customers, partners, and other stakeholders.</li>
