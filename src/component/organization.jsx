@@ -56,7 +56,7 @@ const MahasiswaList = ({ data }) => (
                                 .toLowerCase() // Mengubah ke huruf kecil
                                 .split(" ") // Memisahkan kata menjadi array
                                 .join(".") // Mengganti spasi dengan titik
-                                .concat(".tik22@mhsw.pnj.ac.id")}`
+                                .concat(".tik22@mhsw.pnj.ac.id")}
                             </p>
                         </div>
                         <div className="w-40 max-[640px]:text-center max-[640px]:w-full">
