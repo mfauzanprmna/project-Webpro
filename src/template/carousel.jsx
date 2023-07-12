@@ -4,10 +4,10 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 const carousel = [
-    { image: "http://localhost:3000/LINE_ALBUM_jahim_230628.jpg"},
-    { image: "http://localhost:3000/LINE_ALBUM_Our First Date_230628.jpg"},
-    { image: "http://localhost:3000/LINE_ALBUM_bukber katanya_230628.jpg"},
-    { image: "http://localhost:3000/LINE_ALBUM_trial fansite_230628.jpg"},
+    { image: "LINE_ALBUM_jahim_230628.jpg"},
+    { image: "LINE_ALBUM_Our First Date_230628.jpg"},
+    { image: "LINE_ALBUM_bukber katanya_230628.jpg"},
+    { image: "LINE_ALBUM_trial fansite_230628.jpg"},
 ];
 
 const Jumbotron = () => {
@@ -28,12 +28,18 @@ const Jumbotron = () => {
         width: 500,
     };
 
+    let domain = window.location.hostname;
+
+    if (domain === 'localhost') {
+        domain = 'localhost:3000';
+    }
+
     return (
         <div className="relative bg-gray-800 -z-10">
             <Slider {...settings} className='overflow-hidden'>
             {carousel.map((item) => (
                 <div>
-                    <img className="object-cover w-full sm:h-[39rem] opacity-60" src={item.image} alt="Jumbotron 1" />
+                    <img className="object-cover w-full sm:h-[39rem] opacity-60" src={`http://${domain}/${item.image}`} alt="Jumbotron 1" />
                 </div>
             ))}
             </Slider>

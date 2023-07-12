@@ -2,6 +2,11 @@ import React from "react";
 import Carousel from "../template/carousel";
 
 export default function home() {
+    let domain = window.location.hostname;
+
+    if (domain === 'localhost') {
+        domain = 'localhost:3000';
+    }
     return (
         <>
             <Carousel />
@@ -18,12 +23,12 @@ export default function home() {
                     </p>
                 </div>
                 <div className='flex-auto sm:w-[5rem]'>
-                    <img src="http://localhost:3000/LINE_ALBUM_jahim_230628.jpg" alt="" className='md:w-[32rem] rounded-lg shadow-lg mx-auto w-[20rem] max-[640px]:w-[32rem]' />
+                    <img src={`http://${domain}/LINE_ALBUM_jahim_230628.jpg`} alt="" className='md:w-[32rem] rounded-lg shadow-lg mx-auto w-[20rem] max-[640px]:w-[32rem]' />
                 </div>
             </div>
             <div className='xl:container xl:mx-auto px-5 flex flex-wrap marquee1 items-center w-full h-[45rem]'>
                 <div className='flex-auto sm:w-[5rem] mr-5'>
-                    <img src="http://localhost:3000/Jakun_20230105_115522.jpg" alt="" className='md:w-[32rem] rounded-lg shadow-lg mx-auto w-[20rem] max-[640px]:w-[32rem]' />
+                    <img src={`http://${domain}/Jakun_20230105_115522.jpg`} alt="" className='md:w-[32rem] rounded-lg shadow-lg mx-auto w-[20rem] max-[640px]:w-[32rem]' />
                 </div>
                 <div className='Poppins-medium flex-auto sm:w-[10rem]'>
                     <h1 className='text-white text-opacity-75 lg:text-6xl font-bold bg-slate-600 rounded-t-lg border-r text-center ml-[30%] p-3 sm:text-4xl text-3xl'>ABOUT US</h1>

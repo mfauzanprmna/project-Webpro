@@ -100,10 +100,6 @@
   }
 }
 
-.listMhs {
-  animation: animasi 1.5s linear;
-}
-
 @keyframes animasi {
   0% {
     transform: translateX(100%);
