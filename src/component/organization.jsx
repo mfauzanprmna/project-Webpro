@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+// import image from 'https://t4.ftcdn.net/jpg/02/29/75/83/360_F_229758328_7x8jwCwjtBMmC6rgFzLFhZoEpLobB6L8.jpg';
 
 const MahasiswaData = [
     { name: "Randy Aulia Ananda Ruslani", role: "Ketua Kelas" },
@@ -33,6 +34,12 @@ const MahasiswaData = [
     { name: "Zakirio Hugoraazaq Wasis",  role: "Anggota" },
 ];
 
+let domain = window.location.hostname;
+
+if (domain === 'localhost') {
+    domain = 'localhost:3000';
+}
+
 const MahasiswaList = ({ data }) => (
     <div className="mx-auto px-4">
         <ul className="divide-y divide-gray-100">
@@ -41,12 +48,14 @@ const MahasiswaList = ({ data }) => (
                     key={mahasiswa.email}
                     className={`flex justify-between gap-x-6 py-5 shadow-lg animate-[animasi_2.${index}s_ease-in-out]`}
                 >
-                    <div className="flex flex-wrap w-full justify-center items-center mx-5">
-                        <img
-                            className="w-28 flex-none rounded-full bg-gray-50"
-                            src="https://t4.ftcdn.net/jpg/02/29/75/83/360_F_229758328_7x8jwCwjtBMmC6rgFzLFhZoEpLobB6L8.jpg"
-                            alt=""
-                        />
+                    <div className="flex flex-wrap w-full justify-center items-center mx-5 ">
+                        <div className="rounded-full overflow-hidden h-28">
+                            <img 
+                                className="w-28 flex-non ebg-gray-50"
+                                src={`http://${domain}/Foto/${mahasiswa.name}.jpg`}
+                                alt=""
+                            />
+                        </div>
                         <div className="flex-auto w-64 mx-5 max-[478px]:text-center">
                             <p className="text-md font-semibold leading-6 text-gray-900">
                                 {mahasiswa.name}
