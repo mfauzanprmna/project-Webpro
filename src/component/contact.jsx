@@ -1,5 +1,13 @@
-import React, { useRef } from 'react';
+import React, { useState,useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import toastr from 'toastr';
+import 'toastr/build/toastr.min.css';
+
+toastr.options = {
+  closeButton: true,
+  positionClass: 'toast-bottom-right',
+  timeOut: 3000,
+};
 
 export const ContactUs = () => {
   const form = useRef();
@@ -10,8 +18,10 @@ export const ContactUs = () => {
     emailjs.sendForm('service_0fuc2h9', 'template_uq3d0p1', form.current, 'QZ4rdIHMBykykuS-b')
       .then((result) => {
           console.log(result.text);
+          toastr.success('Email sent successfully!');
       }, (error) => {
           console.log(error.text);
+          toastr.error('Error sending email');
       });
   };
 
