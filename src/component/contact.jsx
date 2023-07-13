@@ -39,7 +39,7 @@ export const ContactUs = () => {
                 <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="Message">
                   Message
                 </label>
-                <textarea name="message" id="" cols="10" rows="5" className='appearance-none block w-full bg-gray-200 text-gray-700 border border-black rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white'></textarea>
+                <textarea name="message" id="" cols="10" rows="5" className='appearance-none block w-full bg-gray-200 text-gray-700 border border-black rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white' placeholder='Type your message here'></textarea>
               </div>
               <div className='py-5 flex'>
                 <button className='mx-auto w-[10rem] p-4 bg-sky-500 hover:bg-sky-600 rounded-md font-semibold'>Send</button>

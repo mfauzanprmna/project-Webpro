@@ -96,7 +96,7 @@ export default class CustomArrows extends Component {
         return (
             <div className="w-full h-screen flex justify-center items-center bg-red-400">
                 <div className="w-1/2 relative">
-                    <h1 className='text-black text-opacity-75 lg:text-6xl text-center font-bold p-3 text-3xl sm:text-4xl ml-[0%]'>Our Team</h1>
+                    <h1 className='text-white text-opacity-75 lg:text-6xl text-center font-bold p-5 text-3xl sm:text-4xl ml-[0%]'>Our Team</h1>
                     <Slider {...settings}>
                         {MahasiswaData.map((mahasiswa) => (
                             <div className="shadow-md p-5 rounded-md mb-5 h-[27rem] max-[600px]:h-52 bg-gray-300">
