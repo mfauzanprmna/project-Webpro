@@ -21,6 +21,11 @@ const Navbar = () => {
     useEffect(() => {
         setCurrentURL(window.location.pathname);
     }, []);
+    let domain = window.location.hostname;
+
+    if (domain === 'localhost') {
+        domain = 'localhost:3000';
+    }
     return (
         <Disclosure as="nav" className="bg-gray-800 shadow-md shadow-gray-800 sticky top-0 z-10">
             {({ open }) => (
@@ -42,12 +47,12 @@ const Navbar = () => {
                                 <div className="flex flex-shrink-0 items-center">
                                     <img
                                         className="block h-8 w-auto lg:hidden"
-                                        src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                                        src={`http://${domain}/logo.png`}
                                         alt="Your Company"
                                     />
                                     <img
                                         className="hidden h-8 w-auto lg:block"
-                                        src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                                        src={`http://${domain}/logo.png`}
                                         alt="Your Company"
                                     />
                                 </div>

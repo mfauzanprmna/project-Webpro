@@ -39,7 +39,7 @@ function SampleNextArrow(props) {
     return (
         <div
             className={className}
-            style={{ ...style, display: "block", background: "red" }}
+            style={{ ...style, display: "block" }}
             onClick={onClick}
         />
     );
@@ -50,7 +50,7 @@ function SamplePrevArrow(props) {
     return (
         <div
             className={className}
-            style={{ ...style, display: "block", background: "green" }}
+            style={{ ...style, display: "block"}}
             onClick={onClick}
         />
     );
@@ -94,12 +94,12 @@ export default class CustomArrows extends Component {
             domain = "localhost:3000";
         }
         return (
-            <div className="w-full h-screen flex justify-center items-center bg-red-400">
+            <div className="w-full h-[42rem] flex justify-center items-center bg-red-400">
                 <div className="w-1/2 relative">
                     <h1 className='text-white text-opacity-75 lg:text-6xl text-center font-bold p-5 text-3xl sm:text-4xl ml-[0%]'>Our Team</h1>
                     <Slider {...settings}>
                         {MahasiswaData.map((mahasiswa) => (
-                            <div className="shadow-md p-5 rounded-md mb-5 h-[27rem] max-[600px]:h-52 bg-gray-300">
+                            <div className="shadow-md p-5 rounded-md mb-5 h-[27rem] bg-gray-300">
                                 <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden bg-gray-300 lg:aspect-none h-52 rounded-xl">
                                     <img
                                         src={`http://${domain}/Foto/${mahasiswa.name}.jpg`}
